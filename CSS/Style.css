@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y colores generales */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffe5e5; /* rojo muy suave */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #e91e63; /* rosa fuerte */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #f8bbd0, #fce4ec);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #880e4f;
+}
+
+/* Secciones */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #ad1457;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f48fb1;
+  display: inline-block;
+}
+
+/* Botones */
+button {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+/* Formulario de contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8bbd0;
+  color: #880e4f;
+}
