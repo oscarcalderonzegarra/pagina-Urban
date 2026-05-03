@@ -8,7 +8,7 @@
 /* Tipografía y colores generales */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #ffe5e5; /* rojo muy suave */
+  background-color: #FFDBDD; /* rojo muy suave */
   color: #333;
   line-height: 1.6;
 }
@@ -40,7 +40,7 @@ nav a:hover {
 header {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(to right, #f8bbd0, #fce4ec);
+  background: linear-gradient(to right, #f8bbd0, #fce4ec); /* degradado rosado */
 }
 
 header h1 {
@@ -52,7 +52,9 @@ header h1 {
 section {
   padding: 2rem;
   max-width: 900px;
-  margin: auto;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: transparent; /* usa el mismo fondo del body */
 }
 
 section h2 {
@@ -63,7 +65,8 @@ section h2 {
 }
 
 /* Botones */
-button {
+button,
+a.btn {
   background-color: #e91e63;
   color: #fff;
   border: none;
@@ -71,9 +74,12 @@ button {
   border-radius: 25px;
   cursor: pointer;
   transition: background 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-button:hover {
+button:hover,
+a.btn:hover {
   background-color: #c2185b;
 }
 
@@ -95,10 +101,18 @@ textarea {
   resize: vertical;
 }
 
+/* Carrusel */
+.carousel-item img {
+  height: 400px;       /* ajusta el alto a tu gusto */
+  object-fit: cover;   /* recorta la imagen para que encaje */
+  border-radius: 12px; /* esquinas suaves */
+}
+
 /* Footer */
 footer {
+  background-color: #c62828; /* rojizo */
+  color: #fff;
   text-align: center;
   padding: 1rem;
-  background-color: #f8bbd0;
-  color: #880e4f;
+  margin-top: 2rem; /* separa del contenido */
 }
